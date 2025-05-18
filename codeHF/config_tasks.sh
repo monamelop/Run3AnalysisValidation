@@ -68,8 +68,8 @@ DOO2_SEL_DSTAR=0    # hf-candidate-selector-dstar
 DOO2_SEL_TOXIPI=0   # hf-candidate-selector-to-xi-pi
 DOO2_SEL_XIC_XIPIPI=0   # hf-candidate-selector-xic-to-xi-pi-pi
 # Analysis tasks
-DOO2_TASK_D0=1      # hf-task-d0
-DOO2_TASK_DS=0      # hf-task-ds
+DOO2_TASK_D0=0      # hf-task-d0
+DOO2_TASK_DS=1      # hf-task-ds
 DOO2_TASK_DPLUS=0   # hf-task-dplus
 DOO2_TASK_LC=0      # hf-task-lc
 DOO2_TASK_LB=0      # hf-task-lb

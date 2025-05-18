@@ -151,20 +151,14 @@ case $INPUT_CASE in
     INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
     ;;
   17)
-<<<<<<< HEAD
-    INPUT_LABEL="Run 3, p-p 13.6 TeV, Real LHC22o, anchored"
-    INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC22o_apass7"
-=======
     INPUT_LABEL="Run 3, p-p 13.6 TeV, LHC22o_pass7"
     INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC22o_pass7"
->>>>>>> 5771a9c8011f15ff9262f4949a06d29b980fa7bb
     INPUT_FILES="AO2D.root"
     INPUT_RUN=3
     INPUT_IS_O2=1
     INPUT_IS_MC=0
     INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
     ;;
-<<<<<<< HEAD
   18)
     INPUT_LABEL="Run 3, p-p 13.6 TeV, MC LHC22o, anchored"
     INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC22o_apass7_minBias"
@@ -192,7 +186,4 @@ case $INPUT_CASE in
     INPUT_IS_MC=0
     INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
     ;;
-
-=======
->>>>>>> 5771a9c8011f15ff9262f4949a06d29b980fa7bb
   esac
