@@ -1,0 +1,1 @@
+/home/monalisa/ALICEdata/Run3/pp_13.6TeV/real/LHC22o_apass7_minBias/AO2D.root

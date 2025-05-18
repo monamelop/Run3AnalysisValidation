@@ -4,7 +4,7 @@
 # Input specification for runtest.sh
 # (Modifies input parameters.)
 
-INPUT_CASE=2            # Input case
+INPUT_CASE=18            # Input case
 
 NFILESMAX=1             # Maximum number of processed input files. (Set to -0 to process all; to -N to process all but the last N files.)
 
@@ -34,7 +34,7 @@ JSONRUN3="dpl-config_run3.json"              # Run 3
 # JSONRUN5_ONIAX="dpl-config_run5_oniaX.json"  # Run 5, onia (J/psi and X), (higher pt cut on 2-prong decay tracks and no DCA cut on single track)
 JSON="$JSONRUN3"
 
-INPUT_BASE="/data2/data" # alicecerno2
+INPUT_BASE="/home/monalisa/ALICEdata" # alicecerno2
 
 case $INPUT_CASE in
   1)
@@ -154,4 +154,41 @@ case $INPUT_CASE in
     INPUT_IS_MC=1
     INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
     ;;
+  17)
+    INPUT_LABEL="Run 3, p-p 13.6 TeV, Real LHC22o, anchored"
+    INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC22o_apass7"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=0
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
+    ;;
+  18)
+    INPUT_LABEL="Run 3, p-p 13.6 TeV, MC LHC22o, anchored"
+    INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC22o_apass7_minBias"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=0
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
+    ;;
+  19)
+    INPUT_LABEL="Run 3, p-p 13.6 TeV, MC LHC23f, anchored"
+    INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC23f"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=0
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
+    ;;
+  20)
+    INPUT_LABEL="Run 3, p-p 13.6 TeV, MC LHC24d3b, anchored"
+    INPUT_DIR="$INPUT_BASE/Run3/pp_13.6TeV/real/LHC24d3b"
+    INPUT_FILES="AO2D.root"
+    INPUT_RUN=3
+    INPUT_IS_O2=1
+    INPUT_IS_MC=0
+    INPUT_TASK_CONFIG="DOO2_CONV_MCCOLL=1 DOO2_CONV_TRKEX_1_2=1"
+    ;;
+
   esac

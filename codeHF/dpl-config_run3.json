@@ -6,7 +6,8 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file-private": "@list_o2.txt"
+        "aod-file-private": "@list_o2.txt",
+	"aod-memory-rate-limit": 800000000
     },
     "hf-track-index-skim-creator-tag-sel-collisions": {
         "fillHistograms": "true",
